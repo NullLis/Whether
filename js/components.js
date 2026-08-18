@@ -1,10 +1,8 @@
 // components.js — 动态导航栏与页脚（兼容 GitHub Pages 和 Cloudflare Pages）
 (function () {
-    // 根据当前页面 URL 是否包含 "/html/" 来判断是否需要返回上级目录
     const basePath = window.location.pathname.includes('/html/') ? '../' : './';
 
     document.addEventListener('DOMContentLoaded', () => {
-        // 注入导航栏
         const navContainer = document.getElementById('navbar-container');
         if (navContainer) {
             navContainer.innerHTML = getNavbarHTML(basePath);
@@ -12,7 +10,6 @@
             initNavbar();
         }
 
-        // 注入页脚
         const footerContainer = document.getElementById('footer-container');
         if (footerContainer) {
             footerContainer.innerHTML = getFooterHTML(basePath);
@@ -22,7 +19,7 @@
     function getNavbarHTML(basePath) {
         return `
         <nav class="navbar">
-            <a href="${basePath}index.html" class="nav-logo">🧱 PullNail</a>
+            <a href="${basePath}index.html" class="nav-logo">🧱 Whether</a>
             <button class="nav-toggle" id="navToggle">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="${basePath}index.html">首页</a></li>
@@ -35,7 +32,7 @@
                         <li><a href="https://github.com/NullLis/PullNail">🌟 支持项目</a></li>
                     </ul>
                 </li>
-                <li><a href="${basePath}html/download.html">📥 下载游戏</a></li>
+                <li><a href="${basePath}html/download.html">📥 下载项目</a></li>
                 <li><a href="${basePath}html/update.html">📅 更新日志</a></li>
                 <li><a href="${basePath}html/upload.html">📤 上传文件</a></li>
                 <li><a href="${basePath}html/encode.html">🔧 文件编码</a></li>
