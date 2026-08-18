@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PullNail — 积木与钉子</title>
     <style>
-        /* ===== 全部样式（原 root 文件） ===== */
+        /* ===== 全部样式 ===== */
         :root {
             --nav-height: 64px;
             --accent: #e67e22;
@@ -473,7 +473,7 @@
             .container { padding: calc(var(--nav-height) + 2rem) 1rem 2rem; }
         }
 
-        /* ===== 上传页面样式（虽未用到，但保留） ===== */
+        /* ===== 上传页面样式（保留，以防后续使用） ===== */
         .upload-container {
             max-width: 600px;
             margin: 0 auto;
@@ -609,31 +609,19 @@
             </div>
         </section>
 
-        <section id="config">
-            <h2>⚙️ 远程配置</h2>
-            <p>游戏启动时自动拉取：</p>
-            <code>https://NullLis.github.io/PullNail/config.json</code><br>
-            <code>https://pullnail.pages.dev/config.json</code>
-            <pre><code>{
-  "版本号": "1.0.1",
-  "其它": "未知"
-}</code></pre>
-            <p>修改配置后推送仓库即可生效，可添加时间戳绕过缓存。</p>
-        </section>
+        <!-- ===== 远程配置模块已移除 ===== -->
     </div>
 
     <!-- 页脚容器（由 JS 动态生成） -->
     <div id="footer-container"></div>
 
-    <!-- 内联 JavaScript（原 components.js） -->
+    <!-- 内联 JavaScript -->
     <script>
         // components.js — 动态导航栏与页脚（兼容 GitHub Pages 和 Cloudflare Pages）
         (function () {
-            // 根据当前页面 URL 是否包含 "/html/" 来判断是否需要返回上级目录
             const basePath = window.location.pathname.includes('/html/') ? '../' : './';
 
             document.addEventListener('DOMContentLoaded', () => {
-                // 注入导航栏
                 const navContainer = document.getElementById('navbar-container');
                 if (navContainer) {
                     navContainer.innerHTML = getNavbarHTML(basePath);
@@ -641,7 +629,6 @@
                     initNavbar();
                 }
 
-                // 注入页脚
                 const footerContainer = document.getElementById('footer-container');
                 if (footerContainer) {
                     footerContainer.innerHTML = getFooterHTML(basePath);
