@@ -1,7 +1,8 @@
+/* ===== 全部样式（青绿色主题） ===== */
 :root {
     --nav-height: 64px;
-    --accent: #e67e22;
-    --accent-dark: #d35400;
+    --accent: #26a69a;
+    --accent-dark: #00897b;
     --text: #1e272e;
     --text-muted: #3d4f5f;
     --card-bg: rgba(255, 255, 255, 0.85);
@@ -24,12 +25,12 @@ html, body {
 
 body {
     font-family: 'Inter', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
-    background: linear-gradient(160deg, #fdf3e4 0%, #fce8d0 30%, #fad4a5 70%, #f7c994 100%);
+    background: linear-gradient(160deg, #e0f2f1 0%, #b2dfdb 30%, #80cbc4 70%, #4db6ac 100%);
     background-attachment: fixed;
     color: var(--text);
     line-height: 1.7;
     display: flex;
-    flex-direction: column;        /* 垂直弹性布局，将页脚推到底部 */
+    flex-direction: column;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
@@ -187,11 +188,11 @@ body {
 }
 
 .container {
-    flex: 1 0 auto;               /* 占据剩余空间，将页脚推到底部 */
+    flex: 1 0 auto;
     max-width: 880px;
     width: 100%;
     margin: 0 auto;
-    padding: calc(var(--nav-height) + 2rem) 1.5rem 2rem; /* 顶部避开固定导航栏 */
+    padding: calc(var(--nav-height) + 2rem) 1.5rem 2rem;
 }
 
 header {
@@ -208,13 +209,13 @@ header .badge {
     font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 10px rgba(211, 84, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 137, 123, 0.25);
 }
 
 header h1 {
     font-size: 2.6rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #b85c1a, var(--accent-dark));
+    background: linear-gradient(135deg, #00695c, var(--accent-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -283,7 +284,7 @@ h2 {
 }
 
 .card a:hover {
-    color: #a04000;
+    color: #004d40;
     text-decoration: underline;
 }
 
@@ -331,17 +332,17 @@ h2 {
 }
 
 .btn-primary:hover {
-    background: rgba(211, 84, 0, 0.08);
-    border-color: #b85c1a;
-    color: #b85c1a;
+    background: rgba(0, 137, 123, 0.08);
+    border-color: #00695c;
+    color: #00695c;
     transform: translateY(-1px);
-    box-shadow: 0 4px 10px rgba(211, 84, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 137, 123, 0.15);
 }
 
 .btn-primary:active {
-    background: rgba(211, 84, 0, 0.15);
-    border-color: #a04000;
-    color: #a04000;
+    background: rgba(0, 137, 123, 0.15);
+    border-color: #004d40;
+    color: #004d40;
     transform: translateY(1px) scale(0.97);
     box-shadow: none;
     transition: all 0.05s;
@@ -354,17 +355,17 @@ h2 {
 }
 
 .btn-outline:hover {
-    background: rgba(211, 84, 0, 0.08);
-    border-color: #b85c1a;
-    color: #b85c1a;
+    background: rgba(0, 137, 123, 0.08);
+    border-color: #00695c;
+    color: #00695c;
     transform: translateY(-1px);
-    box-shadow: 0 4px 10px rgba(211, 84, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 137, 123, 0.15);
 }
 
 .btn-outline:active {
-    background: rgba(211, 84, 0, 0.15);
-    border-color: #a04000;
-    color: #a04000;
+    background: rgba(0, 137, 123, 0.15);
+    border-color: #004d40;
+    color: #004d40;
     transform: translateY(1px) scale(0.97);
     box-shadow: none;
     transition: all 0.05s;
@@ -433,7 +434,7 @@ pre code {
 }
 
 .footer {
-    flex-shrink: 0;               /* 不允许收缩，保证页脚尺寸 */
+    flex-shrink: 0;
     width: 100%;
     text-align: center;
     color: var(--text-muted);
@@ -465,12 +466,11 @@ pre code {
     .container { padding: calc(var(--nav-height) + 2rem) 1rem 2rem; }
 }
 
-/* ===== 上传页面样式 ===== */
+/* ===== 上传页面样式（保留） ===== */
 .upload-container {
     max-width: 600px;
     margin: 0 auto;
 }
-
 .drop-zone {
     border: 2px dashed var(--accent-dark);
     border-radius: 15px;
@@ -481,22 +481,18 @@ pre code {
     cursor: pointer;
     margin-bottom: 1.5rem;
 }
-
 .drop-zone.dragover {
-    background: rgba(211, 84, 0, 0.1);
+    background: rgba(0, 137, 123, 0.1);
 }
-
 .drop-zone p {
     margin: 0.5rem 0;
     font-size: 1.1rem;
     color: var(--text-muted);
 }
-
 .file-list {
     list-style: none;
     padding: 0;
 }
-
 .file-list li {
     background: var(--card-bg);
     backdrop-filter: blur(10px);
@@ -507,7 +503,6 @@ pre code {
     justify-content: space-between;
     align-items: center;
 }
-
 .file-list .progress-bar {
     width: 100px;
     height: 8px;
@@ -516,18 +511,15 @@ pre code {
     overflow: hidden;
     margin-left: 1rem;
 }
-
 .file-list .progress-fill {
     height: 100%;
     background: var(--accent);
     width: 0%;
 }
-
 .btn-upload {
     margin-top: 1rem;
     display: none;
 }
-
 .status-message {
     margin-top: 1rem;
     text-align: center;
