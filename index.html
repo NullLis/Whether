@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PullNail — 积木与钉子</title>
+    <title>是否 — 积木与钉子</title>
     <style>
         /* ===== 全部样式（青绿色主题） ===== */
         :root {
             --nav-height: 64px;
-            --accent: #26a69a;          /* 青绿主色 */
-            --accent-dark: #00897b;      /* 深青绿 */
+            --accent: #26a69a;
+            --accent-dark: #00897b;
             --text: #1e272e;
             --text-muted: #3d4f5f;
             --card-bg: rgba(255, 255, 255, 0.85);
@@ -535,22 +535,20 @@
     </style>
 </head>
 <body>
-    <!-- 导航栏容器（由 JS 动态生成） -->
     <div id="navbar-container"></div>
 
-    <!-- 主内容 -->
     <div class="container">
         <header>
             <div class="badge">休闲策略 · 轻松解压</div>
-            <h1>PullNail 积木与钉子</h1>
-            <p class="subtitle">一款由 <strong>精鱼宝宝</strong> 开发的 3D 消除游戏<br>点击钉子，拔出它们，消除每一个角落！</p>
+            <h1>是否</h1>
+            <p class="subtitle">一款由 <strong>精鱼宝宝</strong> 开发的 3D 消除是否<br>点击钉子，拔出它们，消除每一个角落！</p>
         </header>
 
         <section>
             <h2>🔗 快速链接</h2>
             <div class="grid-3">
                 <div class="card">
-                    <strong>📦 游戏仓库</strong>
+                    <strong>📦 是否仓库</strong>
                     <a href="https://github.com/NullLis/PullNail">GitHub 仓库</a>
                 </div>
                 <div class="card">
@@ -567,8 +565,8 @@
         </section>
 
         <section id="intro">
-            <h2>📖 游戏简介</h2>
-            <p>《PullNail》是一款轻松上手的 3D 消除游戏。你只需将每一枚钉子消除，即可过关。</p>
+            <h2>📖 是否简介</h2>
+            <p>《是否》是一款轻松上手的 3D 消除是否。你只需将每一枚钉子消除，即可过关。</p>
             <ul style="padding-left: 1.5rem; margin-top: 0.8rem;">
                 <li>每块积木上只能有 <strong>1～6 颗钉子</strong></li>
                 <li><strong>相邻积木的贴合面上，最多只能有一侧存在钉子。</strong></li>
@@ -598,11 +596,11 @@
         </section>
 
         <section id="download">
-            <h2>📥 下载游戏</h2>
+            <h2>📥 下载是否</h2>
             <div style="max-width: 500px; margin: 0 auto;">
                 <div class="card download-card" style="padding: 2.5rem 2rem;">
                     <div class="icon-big">📱</div>
-                    <h3>游戏客户端</h3>
+                    <h3>是否客户端</h3>
                     <p style="margin-bottom: 1.5rem;">支持 Android 8.0+ · 版本 v1.0.3</p>
                     <a href="html/download.html" class="btn btn-primary" style="min-width: 220px;">前往下载</a>
                 </div>
@@ -610,12 +608,9 @@
         </section>
     </div>
 
-    <!-- 页脚容器（由 JS 动态生成） -->
     <div id="footer-container"></div>
 
-    <!-- 内联 JavaScript -->
     <script>
-        // components.js — 动态导航栏与页脚（兼容 GitHub Pages 和 Cloudflare Pages）
         (function () {
             const basePath = window.location.pathname.includes('/html/') ? '../' : './';
 
@@ -636,11 +631,11 @@
             function getNavbarHTML(basePath) {
                 return `
                 <nav class="navbar">
-                    <a href="${basePath}index.html" class="nav-logo">🧱 PullNail</a>
+                    <a href="${basePath}index.html" class="nav-logo">🧱 是否</a>
                     <button class="nav-toggle" id="navToggle">☰</button>
                     <ul class="nav-links" id="navLinks">
                         <li><a href="${basePath}index.html">首页</a></li>
-                        <li><a href="${basePath}html/links.html">🕹️ 更多游戏</a></li>
+                        <li><a href="${basePath}html/links.html">🕹️ 更多是否</a></li>
                         <li class="dropdown" id="communityDropdown">
                             <span class="dropdown-toggle" id="communityToggle">🗣️ 社区与反馈 ▾</span>
                             <ul class="dropdown-menu">
@@ -649,7 +644,7 @@
                                 <li><a href="https://github.com/NullLis/PullNail">🌟 支持项目</a></li>
                             </ul>
                         </li>
-                        <li><a href="${basePath}html/download.html">📥 下载游戏</a></li>
+                        <li><a href="${basePath}html/download.html">📥 下载是否</a></li>
                         <li><a href="${basePath}html/update.html">📅 更新日志</a></li>
                         <li><a href="${basePath}html/upload.html">📤 上传文件</a></li>
                         <li><a href="${basePath}html/encode.html">🔧 文件编码</a></li>
