@@ -195,7 +195,13 @@ body {
     padding: calc(var(--nav-height) + 2rem) 1.5rem 2rem;
 }
 
+/* ===== Header 竖向居中 ===== */
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px;           /* 给足空间，体现居中效果，可按需调整 */
     text-align: center;
     margin-bottom: 3rem;
 }
