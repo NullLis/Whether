@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PullNail — 积木与钉子</title>
     <style>
-        /* ===== 全部样式 ===== */
+        /* ===== 全部样式（青绿色主题） ===== */
         :root {
             --nav-height: 64px;
-            --accent: #e67e22;
-            --accent-dark: #d35400;
+            --accent: #26a69a;          /* 青绿主色 */
+            --accent-dark: #00897b;      /* 深青绿 */
             --text: #1e272e;
             --text-muted: #3d4f5f;
             --card-bg: rgba(255, 255, 255, 0.85);
@@ -32,7 +32,7 @@
 
         body {
             font-family: 'Inter', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
-            background: linear-gradient(160deg, #fdf3e4 0%, #fce8d0 30%, #fad4a5 70%, #f7c994 100%);
+            background: linear-gradient(160deg, #e0f2f1 0%, #b2dfdb 30%, #80cbc4 70%, #4db6ac 100%);
             background-attachment: fixed;
             color: var(--text);
             line-height: 1.7;
@@ -216,13 +216,13 @@
             font-size: 0.85rem;
             font-weight: 600;
             margin-bottom: 1rem;
-            box-shadow: 0 4px 10px rgba(211, 84, 0, 0.25);
+            box-shadow: 0 4px 10px rgba(0, 137, 123, 0.25);
         }
 
         header h1 {
             font-size: 2.6rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #b85c1a, var(--accent-dark));
+            background: linear-gradient(135deg, #00695c, var(--accent-dark));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -291,7 +291,7 @@
         }
 
         .card a:hover {
-            color: #a04000;
+            color: #004d40;
             text-decoration: underline;
         }
 
@@ -339,17 +339,17 @@
         }
 
         .btn-primary:hover {
-            background: rgba(211, 84, 0, 0.08);
-            border-color: #b85c1a;
-            color: #b85c1a;
+            background: rgba(0, 137, 123, 0.08);
+            border-color: #00695c;
+            color: #00695c;
             transform: translateY(-1px);
-            box-shadow: 0 4px 10px rgba(211, 84, 0, 0.15);
+            box-shadow: 0 4px 10px rgba(0, 137, 123, 0.15);
         }
 
         .btn-primary:active {
-            background: rgba(211, 84, 0, 0.15);
-            border-color: #a04000;
-            color: #a04000;
+            background: rgba(0, 137, 123, 0.15);
+            border-color: #004d40;
+            color: #004d40;
             transform: translateY(1px) scale(0.97);
             box-shadow: none;
             transition: all 0.05s;
@@ -362,17 +362,17 @@
         }
 
         .btn-outline:hover {
-            background: rgba(211, 84, 0, 0.08);
-            border-color: #b85c1a;
-            color: #b85c1a;
+            background: rgba(0, 137, 123, 0.08);
+            border-color: #00695c;
+            color: #00695c;
             transform: translateY(-1px);
-            box-shadow: 0 4px 10px rgba(211, 84, 0, 0.15);
+            box-shadow: 0 4px 10px rgba(0, 137, 123, 0.15);
         }
 
         .btn-outline:active {
-            background: rgba(211, 84, 0, 0.15);
-            border-color: #a04000;
-            color: #a04000;
+            background: rgba(0, 137, 123, 0.15);
+            border-color: #004d40;
+            color: #004d40;
             transform: translateY(1px) scale(0.97);
             box-shadow: none;
             transition: all 0.05s;
@@ -473,7 +473,7 @@
             .container { padding: calc(var(--nav-height) + 2rem) 1rem 2rem; }
         }
 
-        /* ===== 上传页面样式（保留，以防后续使用） ===== */
+        /* ===== 上传页面样式（保留） ===== */
         .upload-container {
             max-width: 600px;
             margin: 0 auto;
@@ -489,7 +489,7 @@
             margin-bottom: 1.5rem;
         }
         .drop-zone.dragover {
-            background: rgba(211, 84, 0, 0.1);
+            background: rgba(0, 137, 123, 0.1);
         }
         .drop-zone p {
             margin: 0.5rem 0;
@@ -608,8 +608,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- ===== 远程配置模块已移除 ===== -->
     </div>
 
     <!-- 页脚容器（由 JS 动态生成） -->
