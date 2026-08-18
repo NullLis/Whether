@@ -1,1 +1,99 @@
-Whether Test
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PullNail — 积木与钉子</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="container">
+        <header>
+            <div class="badge">休闲策略 · 轻松解压</div>
+            <h1>PullNail 积木与钉子</h1>
+            <p class="subtitle">一款由 <strong>精鱼宝宝</strong> 开发的 3D 消除游戏<br>点击钉子，拔出它们，消除每一个角落！</p>
+        </header>
+
+        <section>
+            <h2>🔗 快速链接</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <strong>📦 游戏仓库</strong>
+                    <a href="https://github.com/NullLis/PullNail">GitHub 仓库</a>
+                </div>
+                <div class="card">
+                    <strong>🌐 介绍页面</strong>
+                    <a href="https://NullLis.github.io/PullNail/">GitHub Pages</a>
+                    <a href="https://pullnail.pages.dev/">Cloudflare Pages</a>
+                </div>
+                <div class="card">
+                    <strong>📡 配置文件</strong>
+                    <a href="https://NullLis.github.io/PullNail/config.json">GitHub 配置</a>
+                    <a href="https://pullnail.pages.dev/config.json">Cloudflare 配置</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro">
+            <h2>📖 游戏简介</h2>
+            <p>《PullNail》是一款轻松上手的 3D 消除游戏。你只需将每一枚钉子消除，即可过关。</p>
+            <ul style="padding-left: 1.5rem; margin-top: 0.8rem;">
+                <li>每块积木上只能有 <strong>1～6 颗钉子</strong></li>
+                <li><strong>相邻积木的贴合面上，最多只能有一侧存在钉子。</strong></li>
+                <li>积木上<strong>所有的钉子被消除后</strong>，该积木会<strong>失去重力掉落。</strong></li>
+            </ul>
+        </section>
+
+        <section id="gameplay">
+            <h2>🕹️ 核心玩法</h2>
+            <div class="grid-3">
+                <div class="card feature-card">
+                    <div class="icon-big">🖱️</div>
+                    <h3>点击钉子</h3>
+                    <p>旋转视角找到颜色相匹配并且没有被阻挡的钉子，然后点击它。</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon-big">🎯</div>
+                    <h3>凑满任务</h3>
+                    <p>通过找到与上方盒子相同颜色的三枚钉子来完成任务。</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon-big">🔄</div>
+                    <h3>循环往复</h3>
+                    <p>循环往复，直至消除场景内所有钉子。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download">
+            <h2>📥 下载游戏</h2>
+            <div style="max-width: 500px; margin: 0 auto;">
+                <div class="card download-card" style="padding: 2.5rem 2rem;">
+                    <div class="icon-big">📱</div>
+                    <h3>游戏客户端</h3>
+                    <p style="margin-bottom: 1.5rem;">支持 Android 8.0+ · 版本 v1.0.3</p>
+                    <a href="html/download.html" class="btn btn-primary" style="min-width: 220px;">前往下载</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="config">
+            <h2>⚙️ 远程配置</h2>
+            <p>游戏启动时自动拉取：</p>
+            <code>https://NullLis.github.io/PullNail/config.json</code><br>
+            <code>https://pullnail.pages.dev/config.json</code>
+            <pre><code>{
+  "版本号": "1.0.1",
+  "其它": "未知"
+}</code></pre>
+            <p>修改配置后推送仓库即可生效，可添加时间戳绕过缓存。</p>
+        </section>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="js/components.js"></script>
+</body>
+</html>
